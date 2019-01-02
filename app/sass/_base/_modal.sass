@@ -1,0 +1,52 @@
+.modal
+	position: relative
+	overflow: hidden
+	width: 320px
+	height: auto
+	padding: 30px
+	background-color: #fff
+	z-index: 1
+
+
+	a
+		color: $accent
+		&:hover
+			text-decoration: underline
+
+	h3
+		text-align: center
+		margin-bottom: 15px
+		font-size: 18px
+		color: $accent
+
+	div
+		width: 100%
+
+	input
+		width: 100%
+		border: 1px solid #888
+		line-height: 50px
+		height: 50px
+		padding: 0 15px
+		border-radius: 5px
+
+	.btn
+		width: 100%
+
+	.close
+		position: absolute
+		right: 15px
+		top: 15px
+		display: block
+		background: url(../img/icon/close.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		width: 20px
+		height: 20px
+		border: none
+		outline: none
+		cursor: pointer
+		animation: hover-back .2s ease-in forwards
+		&:hover
+			animation: hover .2s ease-in forwards

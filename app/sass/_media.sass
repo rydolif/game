@@ -1,0 +1,422 @@
+
+@media only screen and (max-width : 1200px)
+	
+	.slider-nav
+		img
+			max-height: 80px
+
+
+	.slider-for
+		img
+			max-height: 330px
+
+	.card__content
+		&_top ul
+			padding: 10px
+
+		&_vote
+			padding: 10px
+
+		&_share
+			padding: 10px
+
+	.main__content
+		&_list
+			margin-bottom: 30px
+
+		&_top
+			margin-bottom: 30px
+			padding: 15px
+
+	.nav li
+		margin-right: 15px
+
+	.header
+		&__logo
+			font-size: 30px
+
+		&__search
+			width: 320px
+
+
+@media only screen and (max-width : 991px)
+	.slider-nav
+		img
+			max-height: 80px
+
+
+	.slider-for
+		img
+			max-height: 270px
+
+
+	.card__content_info
+		&--img
+			margin-right: 20px
+
+		.cat
+			display: none
+
+
+
+	.header
+		&__logo
+			font-size: 18px
+
+		&__search
+			width: 270px
+
+			input
+				padding: 0 10px
+
+	.nav
+		a
+			font-size: 12px
+
+		img
+			width: 30px
+			height: 30px
+
+	.main
+		&__nav
+			&_block, &_item
+				width: 48%
+
+			&_wrap, &_list
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-around
+				margin-bottom: 30px
+
+			&_block
+				b
+					margin-bottom: 15px
+
+		&__content_top
+			padding: 20px		
+
+			&--title
+				width: 30%
+
+	.main__content_top
+		flex-wrap: nowrap
+		overflow-x: auto
+
+	.main__content_top--item
+		margin: 0 15px
+		width: auto
+
+		div
+			min-width: 160px
+	
+	.main__content_top--last
+		display: block
+		padding: 5px
+
+@media only screen and (max-width : 767px)
+	.container
+		padding: 0 5px
+
+	.row
+		margin: 0 -5px
+
+	.nav .active::after
+		bottom: -33px
+
+	.main__content
+		padding: 0
+
+	.card
+		&__box
+			margin-bottom: 30px
+
+		&__content--text
+			margin-bottom: 30px
+
+		&__content
+			&_vote span
+				display: none
+
+			&_share span
+				display: none
+
+		&__content_info--item
+			p
+				justify-content: flex-end
+				span
+					display: none
+
+			.img
+				margin-right: 10px
+
+	.header
+		padding: 5px 0
+		z-index: 1001
+
+		&__box
+			display: flex
+			align-items: center
+		
+		&__logo
+			margin-right: 15px
+
+			span
+				display: none
+
+		&__container
+			padding: 0 15px
+
+		&__search
+			z-index: 1001
+
+		&__btn-search
+			display: block
+			height: 35px
+			line-height: 35px
+			padding: 0 10px
+			z-index: 1001
+			margin-right: 15px
+
+		&__search
+			position: absolute
+			left: 110px
+			opacity: 0
+			transition: all .5s
+			z-index: -1
+			width: 255px
+
+			&--active
+				opacity: 1
+				z-index: 4
+
+	.main
+		padding-top: 20px
+		&__content
+
+
+			&_item
+				margin-bottom: 15px
+				&--img
+					margin-bottom: 5px
+
+				&--min
+					padding: 5px 15px
+					img
+						width: 60px
+						height: 60px
+
+		&__content_tag
+			flex-wrap: nowrap
+			overflow: auto
+
+			a
+				white-space: nowrap
+
+	.footer
+		&__container
+			flex-direction: column
+			align-items: center
+			text-align: center
+			padding: 20px 0
+
+			&_item
+				margin-bottom: 30px
+
+		&__up
+			text-align: left
+
+
+@media only screen and (max-width : 576px)
+	.container
+		padding: 5px
+
+	.row
+		margin: 0 -15px
+
+	.main__content--page
+		padding: 0 15px
+
+
+	.main
+		background: #fff
+		overflow: hidden
+				
+
+	.card__content_top ul
+		flex-wrap: wrap
+		padding-left: 0
+		padding-right: 5px
+
+
+	.card__content_info--item p
+		font-size: 12px	
+
+	.card__box_item
+		width: 100%
+		img
+			margin: 0 auto 10px
+			text-align: center
+
+	.card
+
+		&__comments
+			&_item--info
+				flex-wrap: wrap
+
+			&_list
+				padding: 15px
+
+		h2
+			margin-bottom: 15px
+
+		&__content
+			padding: 0
+			box-shadow: none
+
+			&--text
+				padding: 15px
+
+			&_top
+				margin-bottom: 20px
+
+			&_info
+				&--img
+					width: 130px
+					height: 130px
+					margin-bottom: 20px
+
+				&--item
+					img
+						margin-right: 10px
+
+					p
+						flex-wrap: wrap
+
+		&__download
+			a
+				padding: 15px
+				font-size: 12px
+
+		&__box_item
+			padding: 15px
+
+	.main
+
+		&__nav
+			&_item
+				width: 100%	
+
+			&_block
+				&--img
+					margin: 0 auto 15px
+					height: auto
+
+		&__content
+			&_item
+				width: 100%
+
+				&--img
+					max-width: 100%
+					max-height: 100%
+
+			&_top
+				.btn
+					width: 125px
+	
+	.footer__container 
+		padding: 15px
+
+	.header__container
+		padding: 0 15px
+
+@media only screen and (max-width : 480px)
+	
+	.card__content--text
+		padding: 0
+	.card__content_top a
+		font-size: 11px
+
+	.card__content_info--item p
+		padding: 3px 0
+
+	.card__content_info--img
+		width: 115px
+		height: 115px
+
+	.card__box_item
+		margin-bottom: 15px
+
+	.card__box_item span
+		margin-bottom: 5px
+
+	.slider-nav
+		img
+			max-height: 80px
+
+
+	.slider-for
+		img
+			max-height: 230px
+
+	.slick-prev
+		left: 20px
+
+	.slick-next
+		right: 20px
+
+	.card__download b
+		margin-left: 5px
+
+	.main
+		padding-top: 20px
+		&__content
+			&_tag
+				margin-bottom: 10px
+			&_top
+
+				&--title
+					width: 100%
+					max-width: 100%
+
+				&--item
+					font-size: 12px
+
+
+@media only screen and (max-width : 400px)
+	.slider-nav
+		img
+			max-height: 80px
+
+
+	.slider-for
+		img
+			max-height: 170px
+
+	.header__logo
+		display: none
+
+	.header__search
+		left: 55px
+	
+
+	.main__nav_block
+		padding: 0 5px
+
+	.main__nav_block--info
+		flex-wrap: wrap
+		b, span
+			width: 100%
+			text-align: center
+			margin-bottom: 5px
+
+
+
+
+
+
+
+
+
+
+
