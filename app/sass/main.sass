@@ -2,6 +2,54 @@
 @import "base"
 
 
+.static
+	width: 130px
+	height: 14px !important
+	position: relative
+
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		border: 1px solid #fff
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+	position: absolute !important
+	left: 50% !important
+	transform: translate(-50%, 0) !important
+	background-color: transparent !important
+	border: none !important
+	outline: none !important
+	color: #fff !important
+	font-size: 11px !important
+	line-height: 1.8 !important
+	font-weight: 700 !important
+
+
+.ui-widget.ui-widget-content
+	border: 1px solid #c5c5c5
+	background: #f2773e
+
+.ui-slider .ui-slider-range
+	background: #43a047
+
+.ui-slider-horizontal .ui-slider-range-min
+	border: 1px solid #fff !important
+	border-right: none !important
+	padding: 1px
+
+
+.rating
+	display: flex
+	justify-content: space-between
+	width: 100%
+	padding: 5px 0
+
+//--------------------------------------------
+
 .header
 	background-color: $accent
 	padding: 15px 0
@@ -581,6 +629,7 @@
 			&--item
 				display: flex
 				align-items: center
+				justify-content: space-between
 				
 				p
 					display: flex
@@ -588,6 +637,7 @@
 					width: 100%
 					border-bottom: 1px solid #d7d7d7
 					padding: 5px 0
+
 
 				.img
 					margin-right: 30px
@@ -807,6 +857,18 @@
 .main__content_top--last
 	display: none
 
+
+
+.card__box_item
+
+
+	div
+		display: flex
+		justify-content: space-around
+
+.div
+	flex-direction: column !important
+	
 
 @import "page"
 @import "media" // Always at the end

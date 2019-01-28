@@ -249,12 +249,15 @@
 								</div>
 								<div class="card__content_info--item">
 									<img src="img/rating.png" alt="" class="img">
-									<p>
+									<div class="rating">
 										<span>Рейтинг</span>
-										<span class="cat"><img src="img/rat.png" alt=""></span>
+										<div id="owner--custom-price" class="static">
+											<div id="owner--price" class="ui-slider-handle "></div>
+										</div>
 										<b>47 оценок</b>
-									</p>
+									</div>
 								</div>
+
 							</div>
 							<p class="card__content_text">
 								<b>Lorem ipsum dolor sit amet</b>, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
@@ -316,7 +319,9 @@
 									<a href="#">да</a>
 									<a href="#">нет</a>
 								</div>
-								<img src="img/rating-icon.png" alt="">
+								<div id="static--custom-price" class="static">
+									<div id="static--price" class="ui-slider-handle"></div>
+								</div>
 							</div>
 						</div>
 						<a href="#" class="card__box_item">
@@ -511,6 +516,62 @@
 		</div>
 
 	<!-- 	modal end-->
+
+
 	<script src="js/scripts.min.js"></script>
+
+
+	<script>
+		$( function() {
+
+		    var owner__price_min = 1;
+		    $( "#owner__price_min" ).text(owner__price_min);
+
+		    var owner__price_max = 100;
+		    $( "#owner__price_max" ).text(owner__price_max );
+
+
+	        var ownerprice = $( "#owner--price");
+	          $( "#owner--custom-price" ).slider({
+	          range: "min",
+	          value: 70,
+	          min: 1,
+	          max: 100,
+	          create: function() {
+	                ownerprice.text( $( this ).slider( "value" )+ "%");
+	            },
+	            slide: function( event, ui ) {
+	                ownerprice.text( ui.value + "%"  );
+	              }
+	          });   
+
+	        var static__price_min = 1;
+		    $( "#static__price_min" ).text(static__price_min);
+
+		    var static__price_max = 100;
+		    $( "#static__price_max" ).text(static__price_max );
+
+
+	        var staticprice = $( "#static--price");
+	          $( "#static--custom-price" ).slider({
+	          range: "min",
+	          value: 70,
+	          min: 1,
+	          max: 100,
+	          create: function() {
+	                staticprice.text( $( this ).slider( "value" )+ "%");
+	            },
+	            slide: function( event, ui ) {
+	                staticprice.text( ui.value + "%"  );
+	              }
+	          });
+
+		} );
+	</script>
+
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </body>
 </html>
